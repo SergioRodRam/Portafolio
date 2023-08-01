@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="es-MX en">
+  <head>
+    <!-- Metadatos -->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="Author" content="Sergio Rodriguez Ramirez" />
+    <meta name="description" content="Portafolio de Sergio Rodriguez Ramirez">
+    <meta name="keywords" content="Html, CSS, JavaScript, Golang">
+
+    <!-- Favicon -->
+    <link
+      rel="shortcut icon"
+      href="img/logo.ico"
+      type="image/x-icon"
+    />
+
+    <!-- Titulo -->
+    <title>Sergio Rodriguez | SWE</title>
+
+    <!-- Fuentes -->
+
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+    href="https://fonts.googleapis.com/css2?family=Sen:wght@400;700;800&display=swap"
+    rel="stylesheet"
+    />
+    <link
+    href="https://fonts.googleapis.com/css2?family=VT323&display=swap"
+    rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.cdnfonts.com/css/avenir" rel="stylesheet" crossorigin/>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600&family=Sen:wght@700;800&display=swap" rel="stylesheet">
+
+    <!-- Estilos(CSS) -->
+    <link rel="stylesheet" href="css/style.css" />
+    <!--
+        Si se usa un script en la parte del head se debe de usar "defer"
+        al menos por los ejemplos que se han visto de sebe de usar en 
+        esta sección
+    -->
+    <script src="script/script.js" defer></script>
+  </head>
+
+  <body>
+    <!--  Logo de perfil  -->
+    <header>
+      <!--  Menu de navegación  -->
+      <nav class="nav-bar grid">
+        <a href="index.html" class="contenedor-logo">
+          <img class="logo-animado" src="img/logo.svg" alt="Logo">
+        </a>
+        
+        <ul class="enlaces-menu flex">
+          <li><a class="enlace" href="index.html">Home</a></li>
+          <li><a class="enlace" href="index.html#sobre-mi">Sobre mi</a></li>
+          <li><a class="enlace" href="">Portafolio</a></li>
+          <li><a class="enlace" href="">Contacto</a></li>
+        </ul>
+      </nav>
+    </header>
+    
+    <!--  Información rápida del perfil y CV  -->
+    <section class="contenedor-presentacion grid">
+      
+      <!--  Mi foto y nombre-->
+      <div class="perfil flex">
+        <figure>
+          <img class="foto-perfil" src="img/Yo_formal.png" />
+        </figure>
+      </div>
+      
+      <div class="perfil flex">
+        <p>
+          Bienvenido me llamo <span class="nombre">Sergio</span> y soy un pasante de la carrera en <span class="carrera">Sistemas Computacionales</span>
+        </p>
+
+        <p>
+          Soy fan de los sistemas <span class="gustos">linux</span>, el código abierto y la creación de <span class="gustos">aplicaciones del lado del servidor y/o del cliente</span> ademas de ser un explorador de la seguridad informática
+        </p>
+        
+        <!--  Botón a mi CV-->
+        <button type="button" class="cv">
+          <a class="btn" href="https://drive.google.com/file/d/17QvNelQUlO1LX-vT-yRFvdcq18mR62a7/view?usp=drive_link" target="_blank" rel="noopener noreferrer">Consulta cv</a>
+        </button>
+      </div>
+    </section>
+
+    <main>
+      <!--  Mi descripción actual -->
+      <section class="que-hago flex" id="sobre-mi">
+        <div class="content-que-hago flex">
+          <div class="actualidad derecha grid">
+            <h3 class="item1">¿Que estoy haciendo actualmente?</h3>
+  
+            <p class="item2">
+              Actualmente estoy acabando mis estudios en la <span class="carrera">Escuela Superior de Computo (ESCOM)</span> ademas estoy desarrollando proyectos en <span class="gustos">JavaScript y Golang</span> para la administración de grupos musicales.
+            </p>
+            
+            <figure class="item3 img-contex">
+              <img class="imagen tt" src="img/educacion/TT.jpg" alt="Presentación de TT 2022">
+              <figcaption>Presentación de TT 2022</figcaption>
+            </figure>
+          </div>
+          
+          <div class="actualidad izquierda grid">
+            <h3 class="item1">¿Que fue lo que mas me gusto?</h3>
+            
+            <p class="item2">
+              Durante mis clases en ESCOM fui tomando un gusto por los sistemas
+              <span class="gustos">linux, la nube, el software libre, el desarrollo Backend</span> y las
+              buenas practicas en mis proyectos, asi como <span class="gustos">colaborar</span> con mis compañeros para alcanzar nuestros objetivos.
+            </p>
+            
+            <figure class="item3 img-contex">
+              <img class="imagen puppy" src="img/educacion/Puppy.jpg" alt="Presentación en expoescom 2019">
+              <figcaption>Presentación expoescom 2019</figcaption>
+            </figure>
+          </div>
+        </div>
+
+        <div class="content-hobbies-futuro grid">
+          <h3>¿Que mas me gusta hacer?</h3>
+          <div class="extracurricular grid">
+            <p>
+              Me gusta estar al tanto de las <span class="gustos">nuevas tecnologías</span> asi como estar en <span class="gustos">constante aprendizaje</span> como bien decía Thomas Edison <span class="gustos">"No fracase, solo descubrí 999 maneras de como no hacer una bombilla"</span>
+            </p>
+
+            <p>
+              Me gusta compartir mis <span class="gustos">conocimientos</span> con las personas, asi como poner a prueba aquello que aprendo para mis proyectos, hago que todos los <span class="gustos">proyectos tengan un propósito</span> para facilitar el trabajo 
+            </p>
+
+            <p>
+              Dentro de mi filosofía soy partidario de que la <span class="gustos">educación y la tecnología</span> debería de ser accesible para todos, también creo que uno llega a este mundo para <span class="gustos">dejar un mundo mejor</span> del que encontró
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!--  Experiencia laboral
+        Lenguaje de programación
+        Tecnología (AWS, git)
+        2 puntos de una breve descripción 
+          -Colaboro, desarrollo, implemento, optimizo 
+          Desarrollo nuevas características para mejorar la seguridad del cliente en transacciones PayPal
+        Voluntariados
+
+        Si eres recién egresado puedes incluir tu experiencia como becario de medio tiempo, tus practicas profesionales y servicio social. Comienza por el empleo actual. Periodo comprendido(fecha de inicio y fin)/Nombre de la empresa/Puesto. Resalta tus logros de forma cualitativa y/o cuantitativa; enfocarte en los resultados, no en la descripción de las funciones pregúntate, Que hice, como y cual fue el resultado
+      -->
+      <section class="mi-experiencia-laboral">
+        <h1>Experiencia Laboral</h1>
+        <div class="contenedor-experiencia-laboral flex">
+
+          <div class="experiencia-proyecto grid">
+
+            <div class="info-laboral">
+              <p>
+                Empresa: <span class="nombre-empresa">Municipio de Amealco</span>
+              </p>
+              
+              <p>
+                Puesto: <span class="puesto">Servicio Social</span>
+              </p>
+              
+              <p>
+                Periodo: <span class="periodo">Julio del 2022 - Diciembre del 2022</span>
+              </p>
+            </div>
+
+            <ul class="tecnologias tecnologias-laboral flex">
+              <li class="html"></li>
+              <li class="css"></li>
+            </ul>
+
+            <p class="descripcion-laboral">
+              Descripción: <span class="descripcion-experiencia-proyecto">Diseñe, re estructure y re organice las secciones de transparencia, SEVAC y CONVAC de la pagina web del DIF del municipio de AMEALCO asi como su dependencia de los archivos correspondientes</span>
+            </p>
+          </div>
+
+        </div>
+      </section>
+
+      <!--  Mis proyectos
+        Que es?
+        Que se resolvió o que se quería lograr?
+        Breve descripción sobre el proyecto en general
+        Si fue en equipo que hice yo?
+      -->
+      <section class="mis-proyectos">
+        <h1 class="titulo">Mis proyectos</h1>
+
+        <div class="contenedor-proyectos">
+          <div class="proyecto">
+            <h3 class="titulo-proyecto">Pagina web para el "Cuidado Digno"</h3>
+
+            <p class="objetivo-proyecto">
+              <span class="objetivo">Objetivo:</span> Llevar un registro de dietas, planes alimenticios y administración de las dietas. 
+            </p>
+  
+            <p class="descripcipn-proyecto">
+              <span class="descripcion">Descripción:</span> Se creo una pagina web para llevar un registro de las dietas, planes alimenticios y administración de las dietas. En este proyecto me centre en la parte de la creación y administración de la base de datos asi como el Backend y la administración del servidor de en Azure
+            </p>
+
+            <ul class="tecnologias proyecto flex">
+              <li class="html"></li>
+              <li class="css"></li>
+              <li class="mysql"></li>
+              <li class="golang"></li>
+              <li class="azure"></li>
+            </ul>
+
+            <div class="enlaces-proyecto">
+              <a title="Cuidado-digno" href="https://github.com/SergioRodRam/cuidado-digno" target="_blank">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-github-filled logo-animado" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                  <path d="M5.315 2.1c.791 -.113 1.9 .145 3.333 .966l.272 .161l.16 .1l.397 -.083a13.3 13.3 0 0 1 4.59 -.08l.456 .08l.396 .083l.161 -.1c1.385 -.84 2.487 -1.17 3.322 -1.148l.164 .008l.147 .017l.076 .014l.05 .011l.144 .047a1 1 0 0 1 .53 .514a5.2 5.2 0 0 1 .397 2.91l-.047 .267l-.046 .196l.123 .163c.574 .795 .93 1.728 1.03 2.707l.023 .295l.007 .272c0 3.855 -1.659 5.883 -4.644 6.68l-.245 .061l-.132 .029l.014 .161l.008 .157l.004 .365l-.002 .213l-.003 3.834a1 1 0 0 1 -.883 .993l-.117 .007h-6a1 1 0 0 1 -.993 -.883l-.007 -.117v-.734c-1.818 .26 -3.03 -.424 -4.11 -1.878l-.535 -.766c-.28 -.396 -.455 -.579 -.589 -.644l-.048 -.019a1 1 0 0 1 .564 -1.918c.642 .188 1.074 .568 1.57 1.239l.538 .769c.76 1.079 1.36 1.459 2.609 1.191l.001 -.678l-.018 -.168a5.03 5.03 0 0 1 -.021 -.824l.017 -.185l.019 -.12l-.108 -.024c-2.976 -.71 -4.703 -2.573 -4.875 -6.139l-.01 -.31l-.004 -.292a5.6 5.6 0 0 1 .908 -3.051l.152 -.222l.122 -.163l-.045 -.196a5.2 5.2 0 0 1 .145 -2.642l.1 -.282l.106 -.253a1 1 0 0 1 .529 -.514l.144 -.047l.154 -.03z" stroke-width="0" fill="currentColor" />
+                </svg>
+              </a>
+            </div>
+          </div>
+
+          <div class="proyecto">
+            <h3 class="titulo-proyecto">Pagina web para encontrar las escalas musicales</h3>
+
+            <p class="objetivo-proyecto">
+              <span class="objetivo">Objetivo:</span> Facilitar la obtención de las notas musicales dependiendo de que tipo de escala se pretenda obtener.
+            </p>
+  
+            <p class="descripcipn-proyecto">
+              <span class="descripcion">Descripción:</span> Cree esta pagina para poder obtener las escalas musicales a partir de una nota especifica para facilitar las practicas de las escalas musicales.
+            </p>
+
+            <ul class="tecnologias proyecto flex">
+              <li class="html"></li>
+              <li class="javascript"></li>
+              <li class="python"></li>
+            </ul>
+
+            <div class="enlaces-proyecto">
+              <a title="Escalas Musicales" href="https://github.com/SergioRodRam/Escalas" target="_blank">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-github-filled logo-animado" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                  <path d="M5.315 2.1c.791 -.113 1.9 .145 3.333 .966l.272 .161l.16 .1l.397 -.083a13.3 13.3 0 0 1 4.59 -.08l.456 .08l.396 .083l.161 -.1c1.385 -.84 2.487 -1.17 3.322 -1.148l.164 .008l.147 .017l.076 .014l.05 .011l.144 .047a1 1 0 0 1 .53 .514a5.2 5.2 0 0 1 .397 2.91l-.047 .267l-.046 .196l.123 .163c.574 .795 .93 1.728 1.03 2.707l.023 .295l.007 .272c0 3.855 -1.659 5.883 -4.644 6.68l-.245 .061l-.132 .029l.014 .161l.008 .157l.004 .365l-.002 .213l-.003 3.834a1 1 0 0 1 -.883 .993l-.117 .007h-6a1 1 0 0 1 -.993 -.883l-.007 -.117v-.734c-1.818 .26 -3.03 -.424 -4.11 -1.878l-.535 -.766c-.28 -.396 -.455 -.579 -.589 -.644l-.048 -.019a1 1 0 0 1 .564 -1.918c.642 .188 1.074 .568 1.57 1.239l.538 .769c.76 1.079 1.36 1.459 2.609 1.191l.001 -.678l-.018 -.168a5.03 5.03 0 0 1 -.021 -.824l.017 -.185l.019 -.12l-.108 -.024c-2.976 -.71 -4.703 -2.573 -4.875 -6.139l-.01 -.31l-.004 -.292a5.6 5.6 0 0 1 .908 -3.051l.152 -.222l.122 -.163l-.045 -.196a5.2 5.2 0 0 1 .145 -2.642l.1 -.282l.106 -.253a1 1 0 0 1 .529 -.514l.144 -.047l.154 -.03z" stroke-width="0" fill="currentColor" />
+                </svg>
+              </a>
+
+              <a title="Escalas Musicales" href="https://tunadelaescom.epizy.com" target="_blank">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-device-desktop-code logo-animado" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                  <path d="M12.5 16h-8.5a1 1 0 0 1 -1 -1v-10a1 1 0 0 1 1 -1h16a1 1 0 0 1 1 1v8" />
+                  <path d="M7 20h4" />
+                  <path d="M9 16v4" />
+                  <path d="M20 21l2 -2l-2 -2" />
+                  <path d="M17 17l-2 2l2 2" />
+                </svg>
+              </a>
+            </div>
+          </div>
+          
+          <div class="proyecto">
+            <h3 class="titulo-proyecto">Pagina web para rifas</h3>
+
+            <p class="objetivo-proyecto">
+              <span class="objetivo">Objetivo:</span> Facilitar la consulta de los números ocupados y disponibles en una rifa, asi como el registro de las personas para obtener un numero.
+            </p>
+  
+            <p class="descripcipn-proyecto">
+              <span class="descripcion">Descripción:</span> Se creara esta pagina para obtener de una forma rápida y eficaz los números disponibles en una rifa, se pretende hacerla con HTML, CSS, Golang, MySQL y JavaScript.
+            </p>
+
+            <ul class="tecnologias proyecto flex">
+              <li class="html"></li>
+              <li class="javascript"></li>
+              <li class="python"></li>
+            </ul>
+
+            <div class="enlaces-proyecto">
+              <a title="Escalas Musicales" href="https://github.com/SergioRodRam/Escalas" target="_blank">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-github-filled logo-animado" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                  <path d="M5.315 2.1c.791 -.113 1.9 .145 3.333 .966l.272 .161l.16 .1l.397 -.083a13.3 13.3 0 0 1 4.59 -.08l.456 .08l.396 .083l.161 -.1c1.385 -.84 2.487 -1.17 3.322 -1.148l.164 .008l.147 .017l.076 .014l.05 .011l.144 .047a1 1 0 0 1 .53 .514a5.2 5.2 0 0 1 .397 2.91l-.047 .267l-.046 .196l.123 .163c.574 .795 .93 1.728 1.03 2.707l.023 .295l.007 .272c0 3.855 -1.659 5.883 -4.644 6.68l-.245 .061l-.132 .029l.014 .161l.008 .157l.004 .365l-.002 .213l-.003 3.834a1 1 0 0 1 -.883 .993l-.117 .007h-6a1 1 0 0 1 -.993 -.883l-.007 -.117v-.734c-1.818 .26 -3.03 -.424 -4.11 -1.878l-.535 -.766c-.28 -.396 -.455 -.579 -.589 -.644l-.048 -.019a1 1 0 0 1 .564 -1.918c.642 .188 1.074 .568 1.57 1.239l.538 .769c.76 1.079 1.36 1.459 2.609 1.191l.001 -.678l-.018 -.168a5.03 5.03 0 0 1 -.021 -.824l.017 -.185l.019 -.12l-.108 -.024c-2.976 -.71 -4.703 -2.573 -4.875 -6.139l-.01 -.31l-.004 -.292a5.6 5.6 0 0 1 .908 -3.051l.152 -.222l.122 -.163l-.045 -.196a5.2 5.2 0 0 1 .145 -2.642l.1 -.282l.106 -.253a1 1 0 0 1 .529 -.514l.144 -.047l.154 -.03z" stroke-width="0" fill="currentColor" />
+                </svg>
+              </a>
+
+              <a title="Escalas Musicales" href="https://tunadelaescom.epizy.com" target="_blank">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-device-desktop-code logo-animado" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                  <path d="M12.5 16h-8.5a1 1 0 0 1 -1 -1v-10a1 1 0 0 1 1 -1h16a1 1 0 0 1 1 1v8" />
+                  <path d="M7 20h4" />
+                  <path d="M9 16v4" />
+                  <path d="M20 21l2 -2l-2 -2" />
+                  <path d="M17 17l-2 2l2 2" />
+                </svg>
+              </a>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <!--  EDUCACIÓN -->
+      <section class="mi-educacion">
+        <h1>Educación</h1>
+        <div class="contenedor-educacion">
+          <div class="educacion">
+            <h3 class="institucion">Escuela Superior de Computo - IPN</h3>
+
+            <p class="aprendizaje">Ing. en Sistemas Computacionales</p>
+
+            <p class="periodo">Agosto 2013 - Junio 2023 (Pasante)</p>
+          </div>
+        </div>
+      </section>
+
+      <!--  TECNOLOGÍAS -->
+      <section class="mis-tecnologias">
+        <h1>Tecnologías</h1>
+
+        <dl class="tecnologias flex">
+          <dt class="html"></dt>
+          <dd class="nivel"><progress id="file" max="100" value="10"> 70% </progress></dd>
+          <dt class="css"></dt>
+          <dd class="nivel">medio</dd>
+          <dt class="tailwind"></dt>
+          <dd class="nivel"></dd>
+          <dt class="azure"></dt>
+          <dd class="nivel">medio</dd>
+          <dt class="github"></dt>
+          <dd class="nivel">medio</dd>
+        </dl>
+      </section>
+
+      <!--  LENGUAJES DE PROGRAMACIÓN(BUSCAR DIFERENCIA ENTRE TECNOLOGÍAS)  -->
+      <section class="lenguajes-programacion">
+        <h1>Lenguajes de programación</h1>
+
+        <dl class="tecnologias flex">
+          <dt class="java"></dt>
+          <dd class="nivel"><progress id="file" max="100" value="10"> 70% </progress></dd>
+          <dt class="python"></dt>
+          <dd class="nivel">medio</dd>
+          <dt class="javascript"></dt>
+          <dd class="nivel">medio</dd>
+          <dt class="bash"></dt>
+          <dd class="nivel">medio</dd>
+          <dt class="mysql"></dt>
+          <dd class="nivel">medio</dd>
+        </dl>
+      </section>
+
+      <!--
+        Cursos 
+        Certificaciones
+
+        Programas adicionales relacionados con el puesto solicitado, incluyendo fecha de inicio y fin/Nombre del curso/Institución en las que realizaste los estudios
+      -->
+
+      <section class="mis-hobbies">
+        <h1>Hobbies</h1>
+        <div class="contenedor-hobbies">
+          <p class="hobbies">Me gusta realizar caminatas por parques o lugares con vegetación</p>
+          <p class="hobbies">Me gusta cantar y tocar música en especial la mandolina, el laud o la bandurria</p>
+          <p class="hobbies">Me gusta mucho hacer ejercicios de coordinación para reírme un poco de mi</p>
+          <p class="hobbies">Soy un firme creyente de que todos aprendemos paso a pasito</p>
+        </div>
+      </section>
+    </main>
+
+    <!--TODO Terminar de hacer
+      Esto esta pendiente!!
+    -->
+
+    <!--
+
+        ANTERIORES (TAL VEZ NO SEAN NECESARIOS)
+    
+    <br /><br /><br />
+
+    <div class="foto-perfil">
+      <h2>Foto de perfil*</h2>
+      <img src="/img/generales/img_curriculum.png" alt="Foto de perfil" />
+    </div>
+
+    <div class="acerca_de_mi">
+      <h2>Acerca de mi</h2>
+      <div class="descripcion-act-apt">
+        <h3>Actitudes y Aptitudes</h3>
+        <p>
+          Me considero una persona que le gusta relacionarse con las personas
+          para aportar y descubrir nuevas formas de ser mejores, dentro de mis
+          mejores actitudes es la de tener una mentalidad positiva ante las
+          situaciones menos provechosas, también soy una persona perseverante,
+          siempre que tengo un problema trato de solucionarlo de la mejor forma,
+          dentro de mis aptitudes considero que soy bastante empático, siempre
+          trato de ponerme en la situación de la otra persona y tratar de dar un
+          apoyo mediante el ejemplo o la experiencia y justo por eso es que
+          también soy bastante comprensivo en aquellas situaciones que siempre
+          están fuera de nuestro control.
+        </p>
+      </div>
+
+      <div class="descripcion-pas">
+        <h3>Pasatiempos</h3>
+        <p>
+          Dentro de mis pasatiempos mas recurrentes son los de tocar la
+          mandolina, cantar y jugar juegos de celular, también he explorado el
+          area de los dibujos a lápiz pero aun es una area que falta pulir.
+        </p>
+        <p>
+          También me gusta estar informado del entorno que me rodea, si bien no
+          lo considero como un pasatiempo si lo considero mas como un buen
+          habito
+        </p>
+      </div>
+    </div>
+
+    <div class="educacion">
+      <h2>Educación</h2>
+      <ul>
+        <li><p>Universidad: Escuela Superior de Computo del IPN</p></li>
+        <li><p>Platzi: ----</p></li>
+        <li><p>Tecnologías: Java, C, Python, Go</p></li>
+        <li><p>Metodologías usadas: ----</p></li>
+      </ul>
+    </div>
+
+    <div class="proyectos">
+      <h2>Proyectos</h2>
+      <p>Aun no hay para poner aquí</p>
+    </div>
+
+    <div class="a_futuro">
+      <h2>A futuro</h2>
+      <p>Creación de una pagina para torneos de pvp de Pokemon go</p>
+      <p>Juego simple en el motor de juegos Unity</p>
+      <p>Aprender android</p>
+    </div>
+
+    <div class="mundo_mejor">
+      <h2>Un mejor mundo</h2>
+      <p>Pagina de ingles para uso de cualquier persona</p>
+      <p>Configuraciones y scripts para el futuro en linux o windows</p>
+      <p>Videos para el aprendizaje de instrumentos</p>
+    </div>
+    
+    -->
+
+    <footer class="footer grid">
+      <div class="contacto grid">
+        <p>México, Ciudad de México</p>
+
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-map-pin-filled logo-animado" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
+          <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+          <path d="M18.364 4.636a9 9 0 0 1 .203 12.519l-.203 .21l-4.243 4.242a3 3 0 0 1 -4.097 .135l-.144 -.135l-4.244 -4.243a9 9 0 0 1 12.728 -12.728zm-6.364 3.364a3 3 0 1 0 0 6a3 3 0 0 0 0 -6z" stroke-width="0" fill="currentColor" />
+        </svg>
+      </div>
+
+      <p class="footer-derechos">Creado por Sergio Rodríguez Ramírez (2023) &#169;</p>
+
+      <div class="redes-sociales flex">
+        <a title="@SergioRodRam" href="https://github.com/SergioRodRam" target="_blank" class="">
+          <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-github-filled logo-animado" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+            <path d="M5.315 2.1c.791 -.113 1.9 .145 3.333 .966l.272 .161l.16 .1l.397 -.083a13.3 13.3 0 0 1 4.59 -.08l.456 .08l.396 .083l.161 -.1c1.385 -.84 2.487 -1.17 3.322 -1.148l.164 .008l.147 .017l.076 .014l.05 .011l.144 .047a1 1 0 0 1 .53 .514a5.2 5.2 0 0 1 .397 2.91l-.047 .267l-.046 .196l.123 .163c.574 .795 .93 1.728 1.03 2.707l.023 .295l.007 .272c0 3.855 -1.659 5.883 -4.644 6.68l-.245 .061l-.132 .029l.014 .161l.008 .157l.004 .365l-.002 .213l-.003 3.834a1 1 0 0 1 -.883 .993l-.117 .007h-6a1 1 0 0 1 -.993 -.883l-.007 -.117v-.734c-1.818 .26 -3.03 -.424 -4.11 -1.878l-.535 -.766c-.28 -.396 -.455 -.579 -.589 -.644l-.048 -.019a1 1 0 0 1 .564 -1.918c.642 .188 1.074 .568 1.57 1.239l.538 .769c.76 1.079 1.36 1.459 2.609 1.191l.001 -.678l-.018 -.168a5.03 5.03 0 0 1 -.021 -.824l.017 -.185l.019 -.12l-.108 -.024c-2.976 -.71 -4.703 -2.573 -4.875 -6.139l-.01 -.31l-.004 -.292a5.6 5.6 0 0 1 .908 -3.051l.152 -.222l.122 -.163l-.045 -.196a5.2 5.2 0 0 1 .145 -2.642l.1 -.282l.106 -.253a1 1 0 0 1 .529 -.514l.144 -.047l.154 -.03z" stroke-width="0" fill="currentColor" />
+          </svg>
+        </a>
+        
+        <a title="LinkedIn" href="https://www.linkedin.com/in/sergio-rodriguez-ramirez/" target="_blank" class="">
+          <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-linkedin logo-animado" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+            <path d="M4 4m0 2a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2h-12a2 2 0 0 1 -2 -2z" />
+            <path d="M8 11l0 5" />
+            <path d="M8 8l0 .01" />
+            <path d="M12 16l0 -5" />
+            <path d="M16 16v-3a2 2 0 0 0 -4 0" />
+          </svg>
+        </a>
+
+        <a title="ingensiscomescom@outlook.com" href="mailto:ingensiscomescom@outlook.com" class="">
+          <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-mail-filled logo-animado" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+            <path d="M22 7.535v9.465a3 3 0 0 1 -2.824 2.995l-.176 .005h-14a3 3 0 0 1 -2.995 -2.824l-.005 -.176v-9.465l9.445 6.297l.116 .066a1 1 0 0 0 .878 0l.116 -.066l9.445 -6.297z" stroke-width="0" fill="currentColor" />
+            <path d="M19 4c1.08 0 2.027 .57 2.555 1.427l-9.555 6.37l-9.555 -6.37a2.999 2.999 0 0 1 2.354 -1.42l.201 -.007h14z" stroke-width="0" fill="currentColor" />
+          </svg>
+        </a>
+
+        <a title="@Sergio_Caius2410" href="https://t.me/Sergio_Caius2410" target="_blank" class="">
+          <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-telegram logo-animado" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+            <path d="M15 10l-4 4l6 6l4 -16l-18 7l4 2l2 6l3 -4" />
+          </svg>
+        </a>
+      </div>
+    </footer>
+  </body>
+</html>
