@@ -47,7 +47,7 @@
 
   <body>
     <!--  Logo de perfil  -->
-    <header>
+    <header class="sticky">
       <!--  Menu de navegación  -->
       <nav class="nav-bar grid">
         <a href="index.html" class="contenedor-logo">
@@ -56,15 +56,15 @@
         
         <ul class="enlaces-menu flex">
           <li><a class="enlace" href="index.html">Home</a></li>
-          <li><a class="enlace" href="index.html#sobre-mi">Sobre mi</a></li>
-          <li><a class="enlace" href="">Portafolio</a></li>
+          <li><a class="enlace" href="#sobre-mi">Sobre mi</a></li>
+          <li><a class="enlace" href="#experiencia-laboral">Portafolio</a></li>
           <li><a class="enlace" href="">Contacto</a></li>
         </ul>
       </nav>
     </header>
     
     <!--  Información rápida del perfil y CV  -->
-    <section class="contenedor-presentacion grid">
+    <section class="background contenedor-presentacion grid">
       
       <!--  Mi foto y nombre-->
       <div class="perfil flex">
@@ -91,7 +91,7 @@
 
     <main>
       <!--  Mi descripción actual -->
-      <section class="que-hago flex" id="sobre-mi">
+      <section class="background que-hago flex" id="sobre-mi">
         <div class="content-que-hago flex">
           <div class="actualidad derecha grid">
             <h3 class="item1">¿Que estoy haciendo actualmente?</h3>
@@ -150,34 +150,29 @@
 
         Si eres recién egresado puedes incluir tu experiencia como becario de medio tiempo, tus practicas profesionales y servicio social. Comienza por el empleo actual. Periodo comprendido(fecha de inicio y fin)/Nombre de la empresa/Puesto. Resalta tus logros de forma cualitativa y/o cuantitativa; enfocarte en los resultados, no en la descripción de las funciones pregúntate, Que hice, como y cual fue el resultado
       -->
-      <section class="mi-experiencia-laboral">
+      <section class="background mi-experiencia-laboral" id="experiencia-laboral">
         <h1>Experiencia Laboral</h1>
         <div class="contenedor-experiencia-laboral flex">
 
-          <div class="experiencia-proyecto grid">
+          <div class="tarjeta experiencia-proyecto grid">
+            <h3 class="item">DIF Amealco</h3>
 
-            <div class="info-laboral">
+            <div class="info-laboral item">
               <p>
-                Empresa: <span class="nombre-empresa">Municipio de Amealco</span>
-              </p>
-              
-              <p>
-                Puesto: <span class="puesto">Servicio Social</span>
-              </p>
-              
-              <p>
-                Periodo: <span class="periodo">Julio del 2022 - Diciembre del 2022</span>
+                Municipio de Amealco<br>
+                Servicio Social <br>
+                Julio del 2022 - Diciembre del 2022 <br>
               </p>
             </div>
 
-            <ul class="tecnologias tecnologias-laboral flex">
+            <p class="descripcion-laboral item">
+              <span class="descripcion-experiencia-proyecto">Diseñe, re estructure y re organice las secciones de transparencia, SEVAC y CONVAC de la pagina web del DIF del municipio de AMEALCO asi como su dependencia de los archivos correspondientes</span>
+            </p>
+
+            <ul class="tecnologias tecnologias-laboral item flex">
               <li class="html"></li>
               <li class="css"></li>
             </ul>
-
-            <p class="descripcion-laboral">
-              Descripción: <span class="descripcion-experiencia-proyecto">Diseñe, re estructure y re organice las secciones de transparencia, SEVAC y CONVAC de la pagina web del DIF del municipio de AMEALCO asi como su dependencia de los archivos correspondientes</span>
-            </p>
           </div>
 
         </div>
@@ -189,30 +184,24 @@
         Breve descripción sobre el proyecto en general
         Si fue en equipo que hice yo?
       -->
-      <section class="mis-proyectos">
+      <section class="background mis-proyectos">
         <h1 class="titulo">Mis proyectos</h1>
 
-        <div class="contenedor-proyectos">
-          <div class="proyecto">
-            <h3 class="titulo-proyecto">Pagina web para el "Cuidado Digno"</h3>
+        <div class="contenedor-proyectos flex">
+          <div class="tarjeta mi-proyecto grid">
+            <h3 class="titulo-proyecto item">Cuidado Digno</h3>
 
-            <p class="objetivo-proyecto">
-              <span class="objetivo">Objetivo:</span> Llevar un registro de dietas, planes alimenticios y administración de las dietas. 
+            <p class="objetivo-proyecto item">
+              Objetivo:<br>
+              Crear una pagina web para llevar un registro de dietas, planes alimenticios y recolección de los datos del sujeto. 
             </p>
   
-            <p class="descripcipn-proyecto">
-              <span class="descripcion">Descripción:</span> Se creo una pagina web para llevar un registro de las dietas, planes alimenticios y administración de las dietas. En este proyecto me centre en la parte de la creación y administración de la base de datos asi como el Backend y la administración del servidor de en Azure
+            <p class="descripcion-proyecto item">
+              Descripción:<br> 
+              Se creo una pagina web para recolectar la información de la persona. En este proyecto me centre en la parte de la creación y administración de la base de datos asi como el Backend y la administración del servidor de en Azure
             </p>
 
-            <ul class="tecnologias proyecto flex">
-              <li class="html"></li>
-              <li class="css"></li>
-              <li class="mysql"></li>
-              <li class="golang"></li>
-              <li class="azure"></li>
-            </ul>
-
-            <div class="enlaces-proyecto">
+            <div class="enlaces-proyecto item flex">
               <a title="Cuidado-digno" href="https://github.com/SergioRodRam/cuidado-digno" target="_blank">
                 <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-github-filled logo-animado" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
                   <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
@@ -220,26 +209,30 @@
                 </svg>
               </a>
             </div>
+
+            <ul class="tecnologias tecnologias-proyecto item flex">
+              <li class="html"></li>
+              <li class="css"></li>
+              <li class="mysql"></li>
+              <li class="golang"></li>
+              <li class="azure"></li>
+            </ul>
           </div>
 
-          <div class="proyecto">
-            <h3 class="titulo-proyecto">Pagina web para encontrar las escalas musicales</h3>
+          <div class="tarjeta mi-proyecto grid">
+            <h3 class="titulo-proyecto item">Escalas musicales</h3>
 
-            <p class="objetivo-proyecto">
-              <span class="objetivo">Objetivo:</span> Facilitar la obtención de las notas musicales dependiendo de que tipo de escala se pretenda obtener.
+            <p class="objetivo-proyecto item">
+              Objetivo:<br> 
+              Facilitar la obtención de las notas musicales dependiendo de que tipo de escala se pretenda obtener.
             </p>
   
-            <p class="descripcipn-proyecto">
-              <span class="descripcion">Descripción:</span> Cree esta pagina para poder obtener las escalas musicales a partir de una nota especifica para facilitar las practicas de las escalas musicales.
+            <p class="descripcion-proyecto item">
+              Descripción:<br>
+              Cree esta pagina para poder obtener las escalas musicales a partir de una nota especifica para facilitar la practica de las escalas musicales.
             </p>
 
-            <ul class="tecnologias proyecto flex">
-              <li class="html"></li>
-              <li class="javascript"></li>
-              <li class="python"></li>
-            </ul>
-
-            <div class="enlaces-proyecto">
+            <div class="enlaces-proyecto item flex">
               <a title="Escalas Musicales" href="https://github.com/SergioRodRam/Escalas" target="_blank">
                 <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-github-filled logo-animado" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
                   <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
@@ -258,34 +251,36 @@
                 </svg>
               </a>
             </div>
-          </div>
-          
-          <div class="proyecto">
-            <h3 class="titulo-proyecto">Pagina web para rifas</h3>
 
-            <p class="objetivo-proyecto">
-              <span class="objetivo">Objetivo:</span> Facilitar la consulta de los números ocupados y disponibles en una rifa, asi como el registro de las personas para obtener un numero.
-            </p>
-  
-            <p class="descripcipn-proyecto">
-              <span class="descripcion">Descripción:</span> Se creara esta pagina para obtener de una forma rápida y eficaz los números disponibles en una rifa, se pretende hacerla con HTML, CSS, Golang, MySQL y JavaScript.
-            </p>
-
-            <ul class="tecnologias proyecto flex">
+            <ul class="tecnologias tecnologias-proyecto item flex">
               <li class="html"></li>
               <li class="javascript"></li>
               <li class="python"></li>
             </ul>
+          </div>
 
-            <div class="enlaces-proyecto">
-              <a title="Escalas Musicales" href="https://github.com/SergioRodRam/Escalas" target="_blank">
+          <div class="tarjeta mi-proyecto grid">
+            <h3 class="titulo-proyecto item">Portafolio</h3>
+
+            <p class="objetivo-proyecto item">
+              Objetivo:<br> 
+              Tener un lugar donde tener un registro de todo lo que he hecho y que me conozcan.
+            </p>
+  
+            <p class="descripcion-proyecto item">
+              Descripción:<br>
+              Esta pagina me ayuda para poner a disposición de las personas nuevos proyectos y tecnologías en las que estoy trabajando.
+            </p>
+
+            <div class="enlaces-proyecto item flex">
+              <a title="Portafolio" href="https://github.com/SergioRodRam/Portafolio" target="_blank">
                 <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-github-filled logo-animado" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
                   <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
                   <path d="M5.315 2.1c.791 -.113 1.9 .145 3.333 .966l.272 .161l.16 .1l.397 -.083a13.3 13.3 0 0 1 4.59 -.08l.456 .08l.396 .083l.161 -.1c1.385 -.84 2.487 -1.17 3.322 -1.148l.164 .008l.147 .017l.076 .014l.05 .011l.144 .047a1 1 0 0 1 .53 .514a5.2 5.2 0 0 1 .397 2.91l-.047 .267l-.046 .196l.123 .163c.574 .795 .93 1.728 1.03 2.707l.023 .295l.007 .272c0 3.855 -1.659 5.883 -4.644 6.68l-.245 .061l-.132 .029l.014 .161l.008 .157l.004 .365l-.002 .213l-.003 3.834a1 1 0 0 1 -.883 .993l-.117 .007h-6a1 1 0 0 1 -.993 -.883l-.007 -.117v-.734c-1.818 .26 -3.03 -.424 -4.11 -1.878l-.535 -.766c-.28 -.396 -.455 -.579 -.589 -.644l-.048 -.019a1 1 0 0 1 .564 -1.918c.642 .188 1.074 .568 1.57 1.239l.538 .769c.76 1.079 1.36 1.459 2.609 1.191l.001 -.678l-.018 -.168a5.03 5.03 0 0 1 -.021 -.824l.017 -.185l.019 -.12l-.108 -.024c-2.976 -.71 -4.703 -2.573 -4.875 -6.139l-.01 -.31l-.004 -.292a5.6 5.6 0 0 1 .908 -3.051l.152 -.222l.122 -.163l-.045 -.196a5.2 5.2 0 0 1 .145 -2.642l.1 -.282l.106 -.253a1 1 0 0 1 .529 -.514l.144 -.047l.154 -.03z" stroke-width="0" fill="currentColor" />
                 </svg>
               </a>
 
-              <a title="Escalas Musicales" href="https://tunadelaescom.epizy.com" target="_blank">
+              <a title="Portafolio" href="https://sergio-rodriguez-sistemas.netlify.app/" target="_blank">
                 <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-device-desktop-code logo-animado" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
                   <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
                   <path d="M12.5 16h-8.5a1 1 0 0 1 -1 -1v-10a1 1 0 0 1 1 -1h16a1 1 0 0 1 1 1v8" />
@@ -296,6 +291,11 @@
                 </svg>
               </a>
             </div>
+
+            <ul class="tecnologias tecnologias-proyecto item flex">
+              <li class="html"></li>
+              <li class="css"></li>
+            </ul>
           </div>
 
         </div>
