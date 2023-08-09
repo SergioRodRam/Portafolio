@@ -884,13 +884,112 @@ button{
     grid-area: parrafo5;
 }
 
+/***************  CONTACTO    ***************/
+
+.mi-contacto{
+    min-height: 62vh;
+    
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("../img/fondos/Fondo6.jpg");
+
+    flex-direction: ;
+
+    flex-wrap: wrap;
+
+    justify-content: space-around;
+    
+    text-align: center;
+    font-weight: bolder;
+}
+
+.content-formulario{
+    width: 40%;
+
+    grid-template-columns: repeat(1, minmax(10%, 20%) minmax(10%, 50%));
+    grid-template-rows: repeat(5, minmax(10%, auto));
+    grid-template-areas: 
+        "nombre     nombre-text"
+        "telefono   telefono-text"
+        "email      email-text"
+        "mensaje    mensaje-text"
+        "boton      boton";
+    
+    justify-items: center;
+    justify-content: space-between;
+
+    border-radius: 2rem;
+    border: solid var(--fondo-fuerte);
+    
+    box-shadow: 
+        0rem 0rem 3rem var(--fondo-fuerte),
+        -1rem -1rem 3rem var(--fondo3-fuerte);
+
+    gap: 3rem;
+
+    padding: 3rem;
+}
+
+.content-formulario > *{
+    border-radius: 2rem;
+
+    padding: 1rem;
+}
+
+.nombre-formulario{
+    grid-area: nombre;
+}
+
+.telefono-formulario{
+    grid-area: telefono;
+}
+
+.email-formulario{
+    grid-area: email;
+}
+
+.mensaje-formulario{
+    grid-area: mensaje;
+}
+
+.nombre-formulario-texto{
+    width: 100%;
+    
+    grid-area: nombre-text;
+}
+
+.telefono-formulario-texto{
+    width: 100%;
+    
+    grid-area: telefono-text;
+}
+
+.email-formulario-texto{
+    width: 100%;
+
+    grid-area: email-text;
+}
+
+.mensaje-formulario-texto{
+    width: 100%;
+    height: 10vh;
+
+    resize:none;
+
+    grid-area: mensaje-text;
+}
+
+.boton-formulario{
+    width: 60%;
+
+    grid-area: boton;
+}
+
 /***************  FOOTER    ***************/
 
 .footer{
     width: auto;
     height: 10rem;
 
-    background-color: var(--fondo);
+    background-color: var(--fondo-fuerte);
     border-radius: 0rem 0rem 2.5rem 2.5rem;
 
     grid-template-columns: minmax(15%, auto) minmax(20%, auto) minmax(33%, auto);
