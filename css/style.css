@@ -321,6 +321,7 @@ button{
 /***************  PRESENTACIÓN    ***************/
 
 .contenedor-presentacion{
+    min-height: 62vh;
 
     border-radius: 0rem 0rem 0rem 0rem;
 
@@ -891,8 +892,6 @@ button{
     
     background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("../img/fondos/Fondo6.jpg");
 
-    flex-direction: ;
-
     flex-wrap: wrap;
 
     justify-content: space-around;
@@ -981,6 +980,8 @@ button{
     width: 60%;
 
     grid-area: boton;
+
+    font-weight: bolder;
 }
 
 /***************  FOOTER    ***************/
@@ -992,7 +993,7 @@ button{
     background-color: var(--fondo-fuerte);
     border-radius: 0rem 0rem 2.5rem 2.5rem;
 
-    grid-template-columns: minmax(15%, auto) minmax(20%, auto) minmax(33%, auto);
+    grid-template-columns: minmax(25%, auto) minmax(20%, auto) minmax(33%, auto);
     grid-template-rows: 100%;
     grid-template-areas: 
         "localidad  derechos    redes";
@@ -1010,7 +1011,9 @@ button{
 .localidad{
     grid-area: localidad;
     
-    grid-template-columns: minmax(10%, 50%) auto;
+    grid-template-columns: minmax(10%, 50%) minmax(25%, auto);
+
+    justify-items: center;
 
     margin: 0rem;
     padding: 0rem;
@@ -1064,6 +1067,12 @@ button{
 
     .mi-proyecto > p{
         font-size: 1.2rem;
+    }
+    
+    /***************  CONTACTO    ***************/
+    
+    .mi-contacto{
+        flex-direction: column;
     }
 }
 
@@ -1302,6 +1311,12 @@ button{
             "parrafo3   imagen3"
             "imagen2    imagen2"
             "parrafo4   parrafo5";
+    }
+    
+    /***************  CONTACTO    ***************/
+    
+    .content-formulario{
+        width: 60%;
     }
     
     /***************  FOOTER    ***************/
