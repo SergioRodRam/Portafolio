@@ -39,9 +39,6 @@ F7DBA7
     --texto-cuaternario:  #9DACFF;
 }
 
-.tecnologias{
-}
-
 .tecnologias li, .tecnologias dt, .imagen-svg{
     width: 5rem;
     height: 4.4rem;
@@ -254,11 +251,6 @@ button{
 .contenedor-logo{
     width: 100%;
     margin: .5rem;
-}
-
-.contenedor-logo img{
-    width: 2.5rem;
-    height: auto;
 }
 
 .logo-animado{
