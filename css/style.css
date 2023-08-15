@@ -252,6 +252,7 @@ button{
 }
 
 .contenedor-logo{
+    width: 100%;
     margin: .5rem;
 }
 
@@ -348,7 +349,7 @@ button{
 }
 
 .foto-perfil{
-    width: 30rem;
+    width: 100%;
     height: auto;
     
     border: 1rem solid rgb(255, 255, 0, 50%);
@@ -373,10 +374,10 @@ button{
 }
 
 .btn{
-    background-color: var(--hover_fondo);
+    background-color: var(--fondo-fuerte);
     border-radius: 2.5rem;
 
-    color: var(--texto-primario2);
+    color: var(--texto-primario);
 
     padding: 1rem;
 }
