@@ -256,6 +256,11 @@ button{
     margin: .5rem;
 }
 
+.contenedor-logo img{
+    width: 2.5rem;
+    height: auto;
+}
+
 .logo-animado{
     width: 2.5rem;
     height: auto;
